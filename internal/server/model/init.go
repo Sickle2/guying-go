@@ -12,4 +12,12 @@ func init() {
 
 func InitTable() {
 	Conn.AutoMigrate(&AdminUser{})
+	Conn.AutoMigrate(&Department{})
+	Conn.AutoMigrate(&JobPosition{})
+	Conn.AutoMigrate(&Menu{})
+	Conn.AutoMigrate(&RoleDept{})
+	Conn.AutoMigrate(&Role{})
+	Conn.AutoMigrate(&RoleMenu{})
+	Conn.AutoMigrate(&UserPost{})
+	Conn.AutoMigrate(&UserRole{})
 }

@@ -7,7 +7,7 @@ package model
  * @create: 2023-07-28 16:32
  **/
 type AdminUser struct {
-	ID          uint `gorm:"primarykey;autoIncrement"`
+	UserID      uint `gorm:"primarykey;autoIncrement"`
 	UserName    string
 	NickName    string
 	UserType    int
