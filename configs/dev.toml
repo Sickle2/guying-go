@@ -1,0 +1,23 @@
+[app]
+mode = "develop"
+name = "test"
+level = "debug"
+secret = "123"
+port = 9000
+unAuthUrl = ["/login"]
+
+
+[mysql]
+driver = "mysql"
+dsn = "root:123@tcp(127.0.0.1:3306)/guying?charset=utf8mb4&parseTime=True&loc=Local&interpolateParams=true"
+maxIdleConn = 8
+maxOpenConn = 16
+maxLifetime = 600
+
+[zap]
+file = "./test-http.log"
+maxSize = 10 # 日志文件大小 M
+maxAge = 3  # 最多保存多少备份
+maxBackups = 10 # 保存多少天
+compress = true
+level = "debug"
